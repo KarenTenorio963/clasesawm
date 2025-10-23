@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double angulo_grados, angulo_radianes, seno;
+
+    printf("Ingrese el ángulo en grados: ");
+    scanf("%lf", &angulo_grados);
+
+    angulo_radianes = angulo_grados * M_PI / 180.0;
+    seno = sin(angulo_radianes);
+
+    printf("El seno de %.2f grados es: %.6f\n", angulo_grados, seno);
+
+    return 0;
+}

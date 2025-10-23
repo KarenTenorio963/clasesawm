@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>semana4 awm</title>
+  <style>
+
+    * {
+        box-sizing: border-box; 
+        margin: 0px; 
+        padding: 0px; 
+        font-family: Arial, Helvetica, sans-serif;
+    }
+   
+    .nav {
+        background-color: #1a1919;
+        color: #fff;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-title {
+        font-size: 24px;
+    }
+    .nav-links {
+        
+        display: flex;
+        
+    }
+    li {
+        margin-left: 20px;
+        justify-content: end;
+        display: flex;
+        align-items: center;
+        
+    }
+    .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        padding: 6px 12px;
+        align-items: center;
+    }
+    
+    .btn {
+        background-color: #308add;
+        color: #fff;
+        font-size: 16px;
+        padding: 8px 16px;
+        
+    }
+  
+  </style>
+  
+</head>
+<body>
+    <div class="nav">
+    <h1 class="nav-title">Perfil</h1> 
+    <ul class="nav-links">
+        <li><a href="#">Inicio</a></li> 
+        <li><a href="#" class="active">My Profile</a></li>
+        <li><a href="#">Encontrar conexiones</a></li>
+        <li><button class="btn" id="btnCerrarSesion" onclick="cerrarSesion()">Cerrar sesión</button></li>
+    </ul>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
