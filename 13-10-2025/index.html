@@ -1,0 +1,156 @@
+<!DOCTYPE html>   
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gastronomía de San José</title>
+  <style>
+    div{
+        background-color: rgb(236, 116, 249);
+    }
+    
+    #especial{
+        background-color: rgb(116, 200, 249);
+    }
+    .datos_personales{
+                background-color: rgb(116, 249, 171);
+    }
+    h1, h2 {
+        text-align: center;
+        background-color: rgb(249, 116, 242);
+    }
+    /* div h3 es un ancestro este tipo de selector es para definir un selector ancesto-descendiente
+    div h3{
+        background-color: rgb(26, 210, 103);
+    }
+        si quiero definir tamaños reativos, debo asegurarme que el body debe tener seteado el body y el html en 100%
+        como el contenedor no tiene un tamaño lo que se encuentre dentro no puede definir cuanto es el 50%
+        el modelo de caja, un div es un bloque, que se alinea con el modelo de caja, el div tiene un margin, que es la separacion de unelemento con su elemento adyacente
+        padding es un rrelleno que va del borde hasta el inicio del contenido
+        el borde es espacio del borde hasta el inicio del contenido
+        width define el ancho del contenido
+        propiedad boxizing define: border-box toma en cuenta la parte del contenido, del paddig, y del borde
+        para el lunes coding dojo algorithm app
+        crear una cuenta y terminar todos los ejercicios propuestos
+        */
+    div > h3{ /*el simbolo > es para definir un selector padre-hijo */
+        background-color: rgb(249, 116, 116);
+    }  
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        background-color: yellow;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }  
+  </style>  
+</head>
+<body>
+    
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia.</h1>
+    <h2>Lorem, ipsum dolor.</h2>
+    
+  <form action="">
+    <!--<div>
+        <label for="nombre" class="">Name</label>
+        <input type="text" name="nombre" id="name">
+    </div>
+     <div>
+     label for="nombre">Name</label// en vez del label se puede poner 
+     el placeholder y se muestra de otra manera
+        <input type="text" name="name2" id="name2" placeholder="Nombre2">
+    </div>
+     <div>
+        <label for="apellido">Last Name</label>
+        <input type="text" name="apellido" id="apellido">
+    </div>
+     <div>
+        <label for="edad">Age</label>
+        <input type="number" name="edad" id="edad" placeholder="edad">
+    </div>
+     <div>
+        
+        <input type="date" name="fecha" id="fecha">
+    </div>
+    <div>
+        
+        <input type="color" name="color" id="color">
+
+    </div>
+    <div>
+        <input type="radio" name="font" value="bold" id="bold">
+        <label for="bold"><strong>Negrita</strong><label>
+        <input type="radio" name="font" value="normal" id="normal">
+        <label for="normal">Normal<label>
+    </div>
+    -->
+    
+    <div>
+        <label for="Nombre" class="datos_personales">Name: *</label>
+        <input type="text" name="nombre" id="nombre">
+
+    </div>
+    <div>
+        <label for="apellido" class="datos_personales">Last Name: *</label>
+        <input type="text" name="apellido" id="apellido">
+    </div>
+    <div>
+        <label for="correo">Email: *</label>
+        <input type="email" name="email" id="email">
+    </div>
+    <div>
+        <label for="contraseña">Password: *</label>
+        <input type="password" name="password" id="password">
+
+    </div>
+    <div>
+        <label for="confirmarContraseña">Confirmar Contraseña:*</label>
+        <input type="password" name="confirmarContraseña" id="confirmarContraseña">
+    </div>
+    <div>
+        <label for="fecha">Birthday:</label>
+        <input type="date" name="fecha" id="fecha" placeholder="mm/dd/yyyy">
+    </div>
+    <div>
+        <label for="genero">Genero de Identidad:</label>
+        <br>
+        <input type="radio" name="font" value="bold" id="bold">
+        <label for="bold">Male<label>
+        <input type="radio" name="font" value="normal" id="normal">
+        <label for="normal">Female<label>
+        <input type="radio" name="font" value="binario" id="binario">
+        <label for="binario">No binario<label>
+        <input type="radio" name="font" value="noanswer" id="noanswer">
+        <label for="noanswer">No responder<label>
+    </div>
+    <div>
+        <label id="especial" for="comentario">Añade una descripción:<label></label>
+        <br>
+        <textarea name="comment" cols="20" rows="3"></textarea>
+    </div>
+    <label for="idiomaPreferido">Idioma Preferido: </label>
+    <select name="idiomaPreferido">
+    <option>Inglés</option>
+    <option>Francés</option>
+    <option>Español</option>
+    </select>
+    <div>
+        <input type="checkbox" name="accept" id="accept">
+        <label for="accept">Acepto recibir actualizaciones periódicas<label>
+    </div>
+    <div>
+        <button type="submit">Create Account</button>
+    </div>
+    <div>
+        <h3>Primer h3 en el div</h3>
+        <h3>segundo h3 en el div</h3>
+        <h3>tercero h3 en el div</h3>
+    </div>
+   <h3>primer h3 fuera del div</h3>
+   <h3>segundo h3 fuera del div</h3>
+   <a href="https://wwww.edu.ec">EPN</a> 
+
+
+  </form>
+</body>
+</html>
