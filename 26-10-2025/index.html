@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang =en>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso</title>
+    <link rel="stylesheet" href="../26-10-2025/styles.css">
+</head>
+<body>
+    <div id="contenedor">
+        <h1>Cinefest App</h1>
+        <div id="superior" class="seccion">
+            
+            <div id="detalle">
+                <h2>Detalle de la película</h2>
+                <div class="ingreso">
+                    <label for="titulo">Título:</label>
+                    <input type="text" id="titulo" name="titulo" value="Arma">
+                </div>
+                <div class="ingreso">
+                    <label for="anio">Año de filmación:</label>
+                    <input type="number" id="anio" name="anio" value="2012">
+                </div>
+                <div class="ingreso">
+                    <label for="categoria">Categoría:</label>
+                    <select id="categoria" name="categoria">
+                        <option value="accion">Acción</option>
+                        <option value="comedia">Comedia</option>
+                        <option value="drama">Drama</option>
+                        <option value="terror">Terror</option>
+                        <option value="ciencia ficcion">Ciencia Ficción</option>
+                    </select>
+                </div>
+                <div class="ingreso">
+                    <label for="url">Url carátula:</label>
+                    <input type="text" id="url" name="url" value="https://example.com/armageddon.jpg">
+                </div>
+                <button id="btnAgregar">Agregar</button>
+            </div>
+        </div>
+        <h1>Lista de películas:</h1>
+        <div id="inferior" class="seccion">
+            
+            <div id ="listadoPeliculas">
+                <div id="pelicula1" class="pelicula" data-tittle="Armagedon">
+                    <div class="info">
+                        <p><strong>Título:</strong> Armageddon</p>
+                        <p><strong>Año:</strong> 1998</p>
+                        <p><strong>Categoría:</strong> Ciencia ficción</p>
+                    </div>
+                    <img src="https://cdn.tictuk.com/8d2f7265-71c2-bfdd-48f2-a2a7ae575b90/ee6a4298-5a97-a55b-5b9c-c364166c6f79.jpeg?a=85d8f62c-e281-af5c-8135-5fdac058b562" alt="Carátula de Armageddon" class="portada">
+                </div>
+                <div id="pelicula2" class="pelicula" data-tittle="El Padrino">
+                    <div class="info">
+                        <p><strong>Título:</strong> El Padrino</p>
+                        <p><strong>Año:</strong> 1972</p>
+                        <p><strong>Categoría:</strong> Drama</p>
+                    </div>
+                    <img src="./images/pizza.jpeg" alt="Carátula de El Padrino" class="portada">
+                </div>
+                
+            </div>
+            <div id="cambioColor">
+                <p>Cambiar color de fondo:</p>
+                <div class="opciones">
+                    <label>
+                        <input type="radio" name="bg-color" value="aqua" checked> Aqua
+                    </label>
+                    <label>
+                        <input type="radio" name="bg-color" value="burlywood"> Burlywood
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

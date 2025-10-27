@@ -1,0 +1,144 @@
+/* Estilo base para el body y el contenedor principal */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ADD8E6; /* Default 'Aqua' light-blue background */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#contenedor {
+    width: 100%;
+    border: 3px solid black;
+    background-color: white;
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo para las secciones (Detalle de película y Lista de películas) */
+
+#superior {
+    background-color: #FFC0CB; /* Pink background */
+    border: 1px solid #FF69B4;
+    padding: 15px;
+    margin-bottom: 20px;
+    width:90%;
+    flex: 1;
+}
+#inferior {
+    flex: 8;
+    background-color: #FFC0CB; /* Pink background */
+    border: 1px solid #FF69B4;
+    padding: 15px;
+    margin-bottom: 20px;
+    width:70%;
+    
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    display:inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+#detalle {
+    /* Habilitamos Flexbox para que los elementos hijos (.ingreso) puedan fluir */
+    display: flex;
+    /* Permite que los elementos se envuelvan a la siguiente fila */
+    flex-wrap: wrap;
+    /* Distribuye el espacio entre los elementos */
+    justify-content: space-between;
+    padding: 10px; /* Espacio interno para que no pegue a los bordes */
+}
+
+/* Estilo para los grupos de entrada */
+.ingreso {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.ingreso label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.ingreso input[type="text"],
+.ingreso input[type="number"],
+.ingreso input[type="url"],
+.ingreso select {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    max-width: 70%; 
+}
+
+#btnAgregar {
+    display: block;
+    margin: 15px auto 0;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+/* Estilo para las tarjetas de película en la lista */
+.pelicula {
+    display: flex;
+    flex-direction: column;
+    background-color: #E6E6FA; /* Light-purple background for card */
+    border: 1px solid #DDA0DD;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pelicula .info {
+    flex-grow: 1;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.pelicula p {
+    margin: 3px 0;
+    padding-right: 5px;
+}
+
+.portada {
+    width: 80px; /* Tamaño de la imagen como en el wireframe */
+    height: auto;
+    object-fit: cover;
+    border: 1px solid #333;
+    border-radius: 3px;
+}
+
+/* Estilo para la sección de cambio de color de fondo */
+#cambioColor {
+    text-align: center;
+}
+
+.opciones label {
+    margin: 0 10px;
+    font-weight: normal;
+}
