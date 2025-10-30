@@ -53,13 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     
-    const handlePenalesCheck = (event) => {
-        if (event.target.id === 'penales1') {
-            penales2Checkbox.checked = false;
-        } else if (event.target.id === 'penales2') {
-            penales1Checkbox.checked = false;
-        }
-    };
+   
 
     
     const agregarPronostico = () => {
