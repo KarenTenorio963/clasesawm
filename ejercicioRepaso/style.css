@@ -1,0 +1,177 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f5f6;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contenedorPrincipal {
+    width: 100%;
+    max-width: 600px;
+    background-color: #93dbf7;
+    border-radius: 60px;
+    padding: 10px;
+    
+    
+}
+
+h1 {
+    text-align: center;
+    color: #131313;
+}
+
+.superior {
+    background-color: #f48df2;
+    border-radius: 40px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 3px solid #111111;
+    justify-content: center;
+    
+}
+
+.equipos{
+    display:flex;
+    flex-direction:row;
+}
+
+
+.partidoInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.equipoControl, .marcadorControl {
+    
+    display: flex;
+    align-items: center;
+    
+}
+
+.equipoSelect, .marcadorInput, #comentario {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #c558f4;
+    flex-grow: 1;
+    
+}
+
+.marcadorInput {
+    width: 60px;
+    text-align: center;
+}
+
+.penalesControl {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.penalesControl.hidden {
+    display: none;
+}
+
+
+
+.penalEquipo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.comentarioControl {
+    margin-bottom: 15px;
+}
+
+#comentario {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #e89ff5;
+}
+
+.btnAgregar {
+    width: 60%;
+    padding: 10px;
+    background-color: #e4efee;
+    color: rgb(7, 7, 7);
+    border: none;
+    border-radius: 5px;
+    
+}
+
+.btnAgregar:hover {
+    background-color: #ffffff;
+}
+
+
+.inferior {
+    background-color:#d682e4;
+    border-radius: 30px;
+    padding: 20px;
+    border: 3px solid #0f0b0c;
+}
+
+.listaPronosticos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pronosticoItem {
+    background-color: #e0f7fa;
+    border: 1px solid #80deea;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.puntajes {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1em;
+    font-weight: bold;
+    align-items: center;
+}
+
+.puntajeEquipo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.penalesIcon, .ganadorIcon {
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+.penalesIcon {
+    color: #9c27b0;
+}
+
+.ganadorIcon {
+    color: #ffc107;
+}
+
+.comentarioResultado {
+    font-size: 0.9em;
+    color: #555;
+    font-style: italic;
+    border-top: 1px dashed #ccc;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+
+.separador {
+    font-weight: normal;
+    color: #555;
+}
+

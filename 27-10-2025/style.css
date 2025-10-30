@@ -1,186 +1,76 @@
-/* Estilos Generales */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f5f6;
-    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+    display:flex;
     justify-content: center;
     padding: 20px;
-}
-
-.appContainer {
-    width: 100%;
-    max-width: 600px;
-    background-color: #93dbf7;
-    border-radius: 20px;
-    padding: 10px;
     
+
 }
 
-/* Estilo del Bloque de Predicción (Superior) */
-.prediccionBloque {
-    background-color: #f48df2;
-    border-radius: 15px;
+.contenedor {
+    background-color: rgb(142, 222, 244);
+    border-color: black;
+    border-radius: 20%;
+    width: 90%;
+    height: 100%;
     padding: 20px;
-    margin-bottom: 20px;
-    border: 3px solid #111111;
-    
-}
-
-.equipos{
-    display:flex;
-
-    flex-direction:row;
-}
-
-
-.header {
-    text-align: center;
-    color: #01579b;
-}
-
-
-
-.partidoInfo {
+    justify-content: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
+
 }
 
-.equipoControl, .marcadorControl {
-    flex-basis: 48%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.equipoSelect, .marcadorInput, #comentario {
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #c558f4;
-    flex-grow: 1;
-}
-
-.equipoSelect {
-    background-color: #fce4ec;
-}
-
-.marcadorInput {
-    width: 60px;
+h1 {
+    color: black;
     text-align: center;
 }
 
-/* Controles de Penales */
-.penalesControl {
+#superior {
+    background-color: rgb(236, 142, 244);
+    border-color: black;
+    border-radius: 20%;
+    padding: 20px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#contenedorEquipoMarcador {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+ .equipo {
+    padding: 5px;
+ }
+
+#marcador{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+
+}
+.marcadorInput{
+    width: 20px;
+}
+ #penales{
+    display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    
     padding: 10px;
-    margin-top: 10px;
-    border-top: 1px solid #eee;
-    flex-wrap: wrap;
+ }
+
+
+#comentario{
+    display: inline-block;
+    justify-content: center;
+    width: 400px;
+    padding: 5px;
+    background-color: rgb(199, 162, 233);
+    color:black;
 }
 
-.penalesControl.hidden {
-    display: none;
-}
-
-
-
-.penalEquipo {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.comentarioControl {
-    margin-bottom: 15px;
-}
-
-#comentario {
-    width: 100%;
-    box-sizing: border-box;
-    background-color: #e89ff5;
-}
-
-.btnAgregar {
-    width: 100%;
-    padding: 10px;
-    background-color: #4db6ac;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1em;
-    margin-top: 10px;
-}
-
-.btnAgregar:hover {
-    background-color: #ffffff;
-}
-
-/* Estilo del Bloque de Resultados (Inferior) */
-.resultadosBloque {
-    background-color:#d682e4;
-    border-radius: 15px;
-    padding: 20px;
-    border: 3px solid #0f0b0c;
-}
-
-.listaPronosticos {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.pronosticoItem {
-    background-color: #e0f7fa;
-    border: 1px solid #80deea;
-    padding: 10px;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.scoreLine {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.1em;
-    font-weight: bold;
-    align-items: center;
-}
-
-.equipoScore {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.penalesIcon, .ganadorIcon {
-    font-size: 1.2em;
-    margin-right: 5px;
-}
-
-.penalesIcon {
-    color: #9c27b0;
-}
-
-.ganadorIcon {
-    color: #ffc107;
-}
-
-.comentarioResultado {
-    font-size: 0.9em;
-    color: #555;
-    font-style: italic;
-    border-top: 1px dashed #ccc;
-    padding-top: 5px;
-    margin-top: 5px;
-}
-
-.separador {
-    font-weight: normal;
-    color: #555;
-}

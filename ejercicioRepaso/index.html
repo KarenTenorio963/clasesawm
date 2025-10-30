@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundial Qatar 2022 Karen Tenorio</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="contenedorPrincipal">
+        
+        <h1>Mundial Qatar 2022</h1>
+            
+        <section class="superior">
+            <div class="equipos">
+                <div class="partidoInfo">
+                    <div class="equipoControl">
+                        <label for="equipo1">Equipo 1:</label>
+                        <select id="equipo1" class="equipoSelect">
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Senegal">Senegal</option>
+                            <option value="Paises Bajos">Países Bajos</option>
+                            <option value="Qatar">Qatar</option>
+                        </select>
+                    </div>
+
+                    <div class="marcadorControl">
+                        <label for="marcador1">Marcador:</label>
+                        <input type="number" id="marcador1" class="marcadorInput" min="0" value="1">
+                    </div>
+                </div>
+
+                <div class="partidoInfo">
+                    <div class="equipoControl">
+                        <label for="equipo2">Equipo 2:</label>
+                        <select id="equipo2" class="equipoSelect">
+                            <option value="Qatar">Qatar</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Senegal">Senegal</option>
+                            <option value="Paises Bajos">Países Bajos</option>
+                        </select>
+                    </div>
+
+                    <div class="marcadorControl">
+                        <label for="marcador2">Marcador:</label>
+                        <input type="number" id="marcador2" class="marcadorInput" min="0" value="1">
+                    </div>
+                </div>
+
+            </div>
+            
+            
+            <div class="penalesControl hidden" id="penalesControl">
+                
+                <div class="penalEquipo">
+                    <label for="penales1">Gana en penales</label>
+                    <input type="checkbox" id="penales1" name="ganadorPenales" value="equipo1">
+                </div>
+                <div class="penalEquipo">
+                    <label for="penales2"></label>
+                    <input type="checkbox" id="penales2" name="ganadorPenales" value="equipo2">
+                </div>
+            </div>
+
+            <div class="comentarioControl">
+                <input type="text" id="comentario" placeholder="¡Hoy ganamos, Ecuador!">
+            </div>
+
+            <button id="btnAgregar" class="btnAgregar">Agregar</button>
+        </section>
+        
+        <section class="inferior">
+            <h2>Lista de Pronósticos</h2>
+            <div id="listaPronosticos" class="listaPronosticos">
+                </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

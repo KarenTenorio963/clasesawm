@@ -1,83 +1,74 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang =en>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mundial Qatar 2022 - Pronóstico</title>
-    <link rel="stylesheet" href="style.css"> 
+    <title>Repaso</title>
+    <link rel="stylesheet" href="../27-10-2025/style.css">
 </head>
 <body>
-    <div class="appContainer">
-        <header class="header">
-            <h1>Mundial Qatar 2022</h1>
-            
-        </header>
-
-        <section class="prediccionBloque">
-            <div class="equipos">
-                <div class="partidoInfo">
-                    <div class="equipoControl">
+    <div class="contenedor">
+        <h1>Mundial Qatar 2022</h1>
+        <div id="superior" class="seccion">
+            <div id="contenedorEquipoMarcador">
+                <div id="equipoInfo1"class="equipo">
+                    <div id="eligEquipo">
                         <label for="equipo1">Equipo 1:</label>
-                        <select id="equipo1" class="equipoSelect">
-                            <option value="Ecuador">Ecuador</option>
-                            <option value="Senegal">Senegal</option>
-                            <option value="Paises Bajos">Países Bajos</option>
-                            <option value="Qatar">Qatar</option>
+                        <select id="equipo1" name="escogerEquipo">
+                            <option value="ecuador">Ecuador</option>
+                            <option value="senegal">Senegal</option>
+                            <option value="paisesBajos">Países Bajos</option>
+                            <option value="qatar">Qatar</option>
                         </select>
                     </div>
-
-                    <div class="marcadorControl">
+                    <div id="marcador">
                         <label for="marcador1">Marcador:</label>
                         <input type="number" id="marcador1" class="marcadorInput" min="0" value="1">
                     </div>
+                                       
                 </div>
-
-                <div class="partidoInfo">
-                    <div class="equipoControl">
-                        <label for="equipo2">Equipo 2:</label>
-                        <select id="equipo2" class="equipoSelect">
-                            <option value="Qatar">Qatar</option>
-                            <option value="Ecuador">Ecuador</option>
-                            <option value="Senegal">Senegal</option>
-                            <option value="Paises Bajos">Países Bajos</option>
+                <div id="equipoInfo2"class="equipo">
+                     <div id="eligEquipo">
+                        <label for="equipo2">Equipo 1:</label>
+                        <select id="equipo2" name="escogerEquipo">
+                            <option value="ecuador">Ecuador</option>
+                            <option value="senegal">Senegal</option>
+                            <option value="paisesBajos">Países Bajos</option>
+                            <option value="qatar">Qatar</option>
                         </select>
                     </div>
-
-                    <div class="marcadorControl">
+                    <div id="marcador">
                         <label for="marcador2">Marcador:</label>
                         <input type="number" id="marcador2" class="marcadorInput" min="0" value="1">
                     </div>
                 </div>
-
             </div>
-            
-            
-            <div class="penalesControl hidden" id="penalesControl">
-                
-                <div class="penalEquipo">
-                    <label for="penales1">Gana en penales</label>
-                    <input type="checkbox" id="penales1" name="ganadorPenales" value="equipo1">
+
+            <div id="penales" class="gpenales">
+                <div id="penalEquipo1">
+                    <label for="penalCheck1">Gana en Penales:</label>
+                    <input type="checkbox" id="penalCheck1" name="ganadorPenales" value="equipo1">
                 </div>
-                <div class="penalEquipo">
-                    <label for="penales2"></label>
-                    <input type="checkbox" id="penales2" name="ganadorPenales" value="equipo2">
+                <div id="penalEquipo2">
+                    <label for="penalCheck2"></label>
+                    <input type="checkbox" id="penalCheck2" name="ganadorPenales" value="equipo2">
                 </div>
             </div>
 
-            <div class="comentarioControl">
+            <div id="añadeComentario">
                 <input type="text" id="comentario" placeholder="¡Hoy ganamos, Ecuador!">
             </div>
+            <button id="btnAgregar">Agregar</button>
 
-            <button id="btnAgregar" class="btnAgregar">Agregar</button>
-        </section>
-        
-        <section class="resultadosBloque">
-            <h2>Lista de Pronósticos</h2>
-            <div id="listaPronosticos" class="listaPronosticos">
-                </div>
-        </section>
+        </div>
+        <div id="inferior" class="seccion">
+
+        </div>
     </div>
 
-    <script src="script.js"></script>
+
+
+
+    <script src="../27-10-2025/script.js"></script>
 </body>
-</html>
+</html>    
