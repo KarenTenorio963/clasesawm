@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang =en>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso</title>
+    <link rel="stylesheet" href="../pruebaKarenT/style.css">
+</head>
+<body>
+   <div id="contenedor">
+    <h1>Ranking de sitios turísticos</h1>
+    <div id="bloquesup" class="seccion">
+        <div id="lugar" class="amarillo">
+            <div id="imagen1">
+                <img src="./images/montana.png" class="imagenp">
+            </div>
+            <div id="info">
+                <div class="titlikes">
+                    <div>
+                        <p id="titulo">El Panecillo</p>
+                    </div>
+                    <div>
+                        <p id="likes">1000 Likes</p>
+                    </div>
+                    
+                </div>
+                
+                <p id="lugar">Quito, Ecuador</p>
+                <p id="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, similique!</p>
+                <button id="btnlike" class="botonlike">Like</button>
+            </div>
+            
+        </div>
+         <div id="lugar" class="amarillo">
+            <div id="imagen1">
+                <img src="./images/globo.png" class="imagenp">
+            </div>
+            <div id="info">
+                <div class="titlikes">
+                    <div>
+                        <p id="titulo">Mitad del Mundo</p>
+                    </div>
+                    <div>
+                        <p id="likes">980 Likes</p>
+                    </div>
+                </div>
+                
+                <p id="lugar">Quito, Ecuador</p>
+                <p id="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, similique!</p>
+                <button id="btnlike" class="botonlike">Like</button>
+            </div>
+            
+        </div>
+        
+
+    </div>
+    <div id="bloqueinf" class="seccion">
+        <div id="bloques3">
+            <div id="destprefer" class="verde1">
+                <p id="texto">Destino preferido:</p>
+                <img src="./images/montana.png" class="imagenp">
+            </div>
+            <div id="destcerca" class="verde1">
+                <p id="texto">Tu destino más cercano:</p>
+                <img src="./images/globo.png" class="imagenp">
+            </div>
+            <div id="desteco" class="verde1">
+                <p id="texto">Destino más económico:</p>
+                <img src="./images/montana.png" class="imagenp">
+            </div>
+            
+        </div>
+        <div id="form">
+            <p>¡Quiero viajar a este sitio!</p>
+            <div id="detalles">
+                 <div id="sitiot">
+                    <label for="sitio">Sitio turístico:</label>
+                    <select id="sitio" name="sitiotur">
+                        <option value="panecillo">El Panecillo</option>
+                        <option value="mitadmundo">Mitad del Mundo</option>
+                    </select>
+                </div>
+                <div id="fechas">
+                    <div id="fechaini">
+                        <label for="fecinicio">Fecha inicial:</label>
+                        <input type="date" name="fechainicio" id="fecinicio" placeholder=" ">
+                    </div>
+                    <div id="fechafin">
+                        <label for="fecfinal">Fecha inicial:</label>
+                        <input type="date" name="fechafinal" id="fecfinal" placeholder=" ">
+                    </div>
+                
+                </div>
+            </div>
+           
+            <button id="btnenvio">Enviar</button>
+        </div>
+    </div>
+   </div>
+</body>
+</html>
