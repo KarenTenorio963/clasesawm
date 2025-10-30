@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const option1 = document.createElement('option');
             option1.value = equipo;
             option1.textContent = equipo;
+            //añade al final de la lista
             equipo1Select.appendChild(option1);
 
             const option2 = document.createElement('option');
@@ -115,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
         nuevoPronostico.classList.add('pronosticoItem'); 
         nuevoPronostico.innerHTML = itemHTML;
 
-        
+        //añaden al inicio de la lista
         listaPronosticos.prepend(nuevoPronostico);
     };
 
@@ -130,6 +131,5 @@ document.addEventListener('DOMContentLoaded', () => {
     
     btnAgregar.addEventListener('click', agregarPronostico);
 
-    penales1Checkbox.addEventListener('change', handlePenalesCheck);
-    penales2Checkbox.addEventListener('change', handlePenalesCheck);
+    
 });
